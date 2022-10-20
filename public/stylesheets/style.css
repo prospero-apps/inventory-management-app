@@ -1,8 +1,144 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 22px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.sidebar a {
+  color: #103a03;
+  font-weight: bold;  
+} 
+
+.sidebar a:hover {
+  color: rgb(6, 168, 6);
+  text-decoration: none;
+}
+
+.main {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 400px;
+  min-width: 400px;
+  background-color: rgb(217, 238, 186);
+  padding: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2em;
+}
+
+.content {
+  padding-left: 1.5em;
+}
+
+.content a {
+  color: #1e7205;
+  font-weight: bold;
+}
+
+.content a:hover {
+  color: rgb(6, 168, 6);
+  text-decoration: none;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category-list li {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.category-list li:hover {
+  background-color: rgb(232, 252, 201);
+}
+
+/* PLANT LIST */
+.small-image {
+  width: 100px;
+  grid-row: 1 / 3;
+  margin: auto;
+}
+
+.plants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.plant-item {
+  border: 2px solid black;
+  border-radius: 10px;
+  display: grid;  
+  padding: 10px;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 100px 80px;
+  align-items: center;
+  justify-items: right;
+}
+
+.plant-item a {
+  text-decoration: none;
+}
+
+.plant-name {
+  font-size: 1.5em;
+}
+
+.plant-price {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* CATEGORY LIST */
+.category-name {
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.category-description {
+  line-height: 1.5em;
+}
+
+/* PLANT DETAIL */
+.big-image {
+  width: 300px;
+}
+
+
+/* FORMS */
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input,
+.form-group textarea {
+  font-size: 1em;
+}
+
+button {
+  font-size: 1.2em;
 }

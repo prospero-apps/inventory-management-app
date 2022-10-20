@@ -1,0 +1,28 @@
+extends layout
+
+block content
+
+  h1.main Category: #{category.name}
+
+  p= category.description
+
+  div(style='margin-left:20px;margin-top:20px')
+
+    h2 Plants in this category
+
+    ul.plants
+      each plant in category_plants
+        li
+          div.plant-item
+            img.small-image(src=plant.image alt=plant.name)          
+            p.plant-price $#{plant.price}
+            a.plant-name(href=plant.url) #{plant.name}
+
+      else
+        p This category has no plants.
+
+  hr
+  p
+    a(href=category.url+'/delete') Delete category
+  p
+    a(href=category.url+'/update') Update category

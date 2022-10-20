@@ -1,0 +1,3 @@
+mongodb+srv://kamil75:mC33kTTr28u@cluster0.xlsmh3y.mongodb.net/inventory_management_app?retryWrites=true&w=majority
+
+(source: https://www.houseplantsexpert.com/)

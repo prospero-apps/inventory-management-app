@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1.main= title
+
+  img.big-image(src=plant.image alt=plant.name)
+  p= plant.description
+  p Price: $#{plant.price}
+  p Availability: #{plant.stock} item(s) in stock
+  
+  p Categories: 
+    each val, index in plant.category
+      a(href=val.url) #{val.name}
+      if index < plant.category.length - 1
+        |,
+
+  hr
+  p
+    a(href=plant.url+'/delete') Delete plant
+  p
+    a(href=plant.url+'/update') Update plant

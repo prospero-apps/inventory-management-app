@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1.main= title
+
+  ul.plants
+    each plant in plant_list
+      li
+        div.plant-item
+          img.small-image(src=plant.image alt=plant.name)          
+          p.plant-price $#{plant.price}
+          a.plant-name(href=plant.url) #{plant.name}
+
+    else
+      li There are no plants.
+
+  //- ul
+  //-   each plant in plant_list
+  //-     li
+  //-       img.small-image(src=plant.image alt=plant.name)
+  //-       a(href=plant.url) #{plant.name}
+  //-       |  $#{plant.price}
+
+  //-   else
+  //-     li There are no plants.

@@ -1,5 +1,26 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1.main= title
+  p Manage Your Plant Inventory.
+
+  h1 Categories 
+
+  ul.category-list
+    each category in data.category_display
+      li
+        a(href=category.url) #{category.name}
+
+    else
+      li There are no categories.
+
+  h1 Stats
+
+  if error
+    p Error getting the stats.
+  else
+    p The inventory has the following record counts:
+
+    ul
+      li #[strong Plants:] !{data.plant_count}
+      li #[strong Categories:] !{data.category_count}
