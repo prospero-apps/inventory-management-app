@@ -1,3 +1,10 @@
 mongodb+srv://kamil75:mC33kTTr28u@cluster0.xlsmh3y.mongodb.net/inventory_management_app?retryWrites=true&w=majority
 
 (source: https://www.houseplantsexpert.com/)
+
+production: 
+mongodb+srv://kamil75:mC33kTTr28u@cluster0.xlsmh3y.mongodb.net/inventory_app?retryWrites=true&w=majority
+
+
+working site on heroku:
+https://young-coast-25171.herokuapp.com/catalog
